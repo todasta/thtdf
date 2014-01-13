@@ -9,7 +9,8 @@ class PostAdmin(admin.ModelAdmin):
     inlines = [ImageInline]
     list_display = ('title', 'created', 'modified', 'status', 'adopted')
     list_filter = ('categories', 'modified', 'status', 'adopted')
-    search_fields = ('title', 'body')
+    list_editable = ('status', 'adopted')
+    search_fields = ('title',)
     prepopulated_fields = {'slug': ('title',)}
     radio_fields = {"status": admin.HORIZONTAL}
     date_hierarchy = 'created'
