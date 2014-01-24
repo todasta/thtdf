@@ -1,0 +1,125 @@
+[
+{
+  "pk": 1, 
+  "model": "blog.category", 
+  "fields": {
+    "slug": "hunde-klein", 
+    "name": "Hunde klein"
+  }
+},
+{
+  "pk": 2, 
+  "model": "blog.category", 
+  "fields": {
+    "slug": "hunde-mittel", 
+    "name": "Hunde mittel"
+  }
+},
+{
+  "pk": 3, 
+  "model": "blog.category", 
+  "fields": {
+    "slug": "hunde-gross", 
+    "name": "Hunde gro\u00df"
+  }
+},
+{
+  "pk": 4, 
+  "model": "blog.category", 
+  "fields": {
+    "slug": "notfelle", 
+    "name": "Notfelle"
+  }
+},
+{
+  "pk": 5, 
+  "model": "blog.category", 
+  "fields": {
+    "slug": "tier-der-woche-1", 
+    "name": "Tier der Woche 1"
+  }
+},
+{
+  "pk": 6, 
+  "model": "blog.category", 
+  "fields": {
+    "slug": "tier-der-woche-2", 
+    "name": "Tier der Woche 2"
+  }
+},
+{
+  "pk": 7, 
+  "model": "blog.category", 
+  "fields": {
+    "slug": "tier-der-woche-3", 
+    "name": "Tier der Woche 3"
+  }
+},
+{
+  "pk": 8, 
+  "model": "blog.category", 
+  "fields": {
+    "slug": "featured-1", 
+    "name": "Featured 1"
+  }
+},
+{
+  "pk": 9, 
+  "model": "blog.category", 
+  "fields": {
+    "slug": "featured-2", 
+    "name": "Featured 2"
+  }
+},
+{
+  "pk": 10, 
+  "model": "blog.category", 
+  "fields": {
+    "slug": "featured-3", 
+    "name": "Featured 3"
+  }
+},
+{
+  "pk": 1, 
+  "model": "blog.post", 
+  "fields": {
+    "body": "Stanley ist ein schicker Junghund, der seinem Menschen gegen\u00fcber sehr aufmerksam ist und sich an ihm orientieren m\u00f6chte. Stanley ist sportlich und \u00e4u\u00dferst kr\u00e4ftig, beherrscht die Grundkommandos sehr gut, l\u00e4sst sich gut abrufen und lernt gern und schnell etwas dazu.\r\n\r\nStanley besucht unsere Hundeschule, wo unter anderem an seiner Leinenf\u00fchrigkeit gearbeitet wird. Mit einem Halti l\u00e4sst er sich mittlerweile sehr gut f\u00fchren. Bei fremden Mensch zeigt er sich schon einmal unsicher, er ist aber an sich ein absolut freundlicher gutm\u00fctiger Hund.\r\n\r\nDen meisten Artgenossen gegen\u00fcber ist er freundlich interessiert oder neutral.\r\n\r\nStanley sucht ein hundeerfahrenes Zuhause, in dem man ihm mit seinen ca. 40 kg kr\u00e4ftem\u00e4\u00dfig gewachsen ist.", 
+    "status": 2, 
+    "created": "2014-01-13T11:17:45.328Z", 
+    "title": "Stanley | Doggen-Mix | 2012", 
+    "modified": "2014-01-13T14:38:17.820Z", 
+    "adopted": false, 
+    "slug": "stanley-doggen-mix-2012", 
+    "categories": [
+      3, 
+      5
+    ]
+  }
+},
+{
+  "pk": 2, 
+  "model": "blog.post", 
+  "fields": {
+    "body": "Unser lieber Senior Max sucht m\u00f6glichst bald ein kuscheliges, warmes Zuhause.\r\n\r\nEr ist herzkrank und braucht regelm\u00e4\u00dfig seine Tabletten. Trotz allem dreht Max gerne und recht munter seine Gassirunden, so in aller Ruhe. F\u00fcr gem\u00fctliche Kuscheleinheiten ist er aber auch zu haben.", 
+    "status": 2, 
+    "created": "2014-01-13T14:39:15.871Z", 
+    "title": "Max | Malteser- Mix | 2000", 
+    "modified": "2014-01-13T14:39:54.816Z", 
+    "adopted": true, 
+    "slug": "max-malteser-mix-2000", 
+    "categories": [
+      1, 
+      4
+    ]
+  }
+},
+{
+  "pk": 1, 
+  "model": "blog.image", 
+  "fields": {
+    "post": 1, 
+    "image": "images/1/Nemo-121028-011.jpg", 
+    "title": "Charly"
+  }
+}
+]
