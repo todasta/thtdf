@@ -1,7 +1,286 @@
+$pink: hsl(330, 96%, 33%);
+$light-pink: hsl(330, 100%, 86%);
+$green: hsl(76, 60%, 52%);
+$light-green: hsl(76, 60%, 82%);
+$lighter-green: hsl(76, 60%, 93%);
+$dark-green: hsl(76, 60%, 30%);
+$black: #222;
+
+$font-size1: 1.5rem;
+$font-size2: 1.25rem;
+$font-size3: 1.0rem;
+$font-size4: 0.875rem;
+$font-size5: 0.75rem;
+
+$gutter: 1rem;
+
+/* GLOBAL */
+
 body {
-    background-color: red;
-    
-    h1 {
-      color: purple;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    color: $black;
+}
+
+h1 {
+    font-size: $font-size1;
+}
+
+h2 {
+    font-size: $font-size2;
+}
+
+h3 {
+    font-size: $font-size3;
+}
+
+h4 {
+    font-size: $font-size4;
+}
+
+h5 {
+    font-size: $font-size5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* GRID */
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 900px) {
+    .grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-  }
+    .grid>.col {
+        flex: 1;
+    }
+    .grid.grid-123>.col {
+        flex: 0 0 calc(50% - $gutter)
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid.grid-123>.col {
+        flex: 0 0 calc(33.33% - $gutter)
+    }
+}
+
+/* HEADER */
+
+.header {
+    background-color: $pink;
+}
+
+.header-branding {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-around;
+}
+
+.header-branding img {
+    height: 2rem;
+}
+
+.header-nav {
+    display: flex;
+    padding-bottom: 0.5rem;
+    justify-content: space-around;
+}
+
+.header-nav a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+}
+
+.header-nav a.active,
+.header-nav a:hover {
+    color: white;
+}
+
+@media (min-width: 900px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-nav a {
+        font-size: 1rem;
+        padding-left: 2rem;
+    }
+    
+    .header-branding img {
+        height: 3rem;
+    }
+}
+
+/* HERO */
+
+.hero {
+    background-color: $light-green;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    padding: 2rem 4rem;
+}
+
+@media (min-width: 600px) {
+    .hero {
+        background-image: url(http://experimental.tierheim-troisdorf.de/vanilla/img/background.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 45vh;
+        text-align: right;
+    }
+    .hero-image {
+        max-height: 30vh;
+        max-width: 40vw;
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: rgba(0,0,0, 0.7);
+        border-radius: 0.5rem;
+    }
+}
+
+/* CARDS */
+
+.card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: $lighter-green;
+    margin-bottom: 2rem;
+    border: 1px solid $dark-green;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .15);
+    
+}
+
+.card-image {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .15);
+}
+
+.card-title {
+    color: $pink;
+}
+
+.card-tags {
+    color: $dark-green;
+}
+
+.card-tags a {
+    color: $dark-green;
+    font-weight: bold;
+    font-size: $font-size4;
+    text-transform: uppercase;
+}
+
+.card-tags {
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: $light-green;
+}
+
+.footer-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 0;
+    font-size: $font-size4;
+}
+
+.footer-info-title {
+    border-bottom: 1px solid $pink;
+    color: $pink;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.footer-nav,
+.footer-social-nav {
+    display: flex;
+    background-color: $pink;
+    justify-content: center;
+}
+
+.footer-social-nav a {
+    color: white;
+    font-size: $font-size2;
+    display: inline-block;
+    padding: 1rem 1rem 0;
+}
+
+.footer-nav a {
+    font-size: $font-size5;
+    color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 1rem 0.5rem 0;
+    text-transform: uppercase;
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    padding: 1.5rem 0 0.5rem;
+    font-size: $font-size5;
+    background-color: $pink;
+}
