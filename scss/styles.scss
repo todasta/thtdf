@@ -14,7 +14,7 @@ $gutter: 1rem;
 /* GLOBAL */
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     color: $black;
 }
@@ -47,7 +47,7 @@ h5 {
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 p {
@@ -118,7 +118,8 @@ a:hover {
     padding: 1rem 0;
     justify-content: space-around;
     h1 {
-        color: $green;
+        color: white;
+        font-weight: normal;
         margin-left: 1rem;
     }
 }

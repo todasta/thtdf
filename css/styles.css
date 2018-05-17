@@ -1,6 +1,6 @@
 /* GLOBAL */
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   color: #222; }
 
@@ -27,7 +27,7 @@ h5 {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: 'Merriweather', serif; }
+  font-family: 'Roboto Slab', serif; }
 
 p {
   margin-top: 0;
@@ -82,7 +82,8 @@ a:hover {
   padding: 1rem 0;
   justify-content: space-around; }
   .header-branding h1 {
-    color: #a7ce3b;
+    color: white;
+    font-weight: normal;
     margin-left: 1rem; }
 
 .header-branding img {
