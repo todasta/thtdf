@@ -76,13 +76,13 @@ a:hover {
 /* HEADER */
 .header {
   background-color: #a50354;
-  padding-bottom: 0.5rem; }
+  padding: 0.5rem 0; }
 
 .header-branding {
   display: flex;
-  padding: 1rem 0;
   justify-content: space-between;
-  align-items: top; }
+  align-items: top;
+  padding-bottom: 1rem; }
 
 .header-branding-text {
   color: white;
@@ -109,14 +109,21 @@ a:hover {
 .header-nav a:hover {
   color: white; }
 
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .header-nav a {
     font-size: 1rem;
-    padding-left: 3rem; } }
+    padding-left: 3rem; }
+  .header-branding-logo {
+    height: 3rem; }
+  .header-branding-text {
+    font-size: 1.5rem; }
+  .header-branding {
+    align-items: center;
+    padding-bottom: 1rem; } }
 
 /* HERO */
 .hero {
