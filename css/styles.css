@@ -75,19 +75,20 @@ a:hover {
 
 /* HEADER */
 .header {
-  background-color: #a50354; }
+  background-color: #a50354;
+  padding-bottom: 0.5rem; }
 
 .header-branding {
   display: flex;
   padding: 1rem 0;
-  justify-content: space-around;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: top; }
 
 .header-branding-text {
   color: white;
   font-weight: normal;
   margin-left: 1rem;
-  font-size: 1.5rem;
+  font-size: 0.875rem;
   font-family: "Roboto Slab", sans-serif;
   color: #a7ce3b; }
 
@@ -96,7 +97,7 @@ a:hover {
 
 .header-nav {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .header-nav a {
   color: rgba(255, 255, 255, 0.7);
@@ -124,7 +125,8 @@ a:hover {
   margin-bottom: 2rem; }
 
 .hero-image {
-  padding: 2rem 4rem; }
+  padding: 2rem;
+  max-height: 60vh; }
 
 @media (min-width: 600px) {
   .hero {

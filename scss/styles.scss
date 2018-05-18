@@ -115,20 +115,21 @@ a:hover {
 
 .header {
     background-color: $pink;
+    padding-bottom: 0.5rem;
 }
 
 .header-branding {
     display: flex;
     padding: 1rem 0;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: top;
 }
 
 .header-branding-text {
     color: white;
     font-weight: normal;
     margin-left: 1rem;
-    font-size: $font-size1;
+    font-size: $font-size4;
     font-family: $font-family-serif;
     color: $green;
 }
@@ -139,7 +140,7 @@ a:hover {
 
 .header-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header-nav a {
@@ -178,7 +179,8 @@ a:hover {
 }
 
 .hero-image {
-    padding: 2rem 4rem;
+    padding: 2rem;
+    max-height: 60vh;
 }
 
 @media (min-width: 600px) {
