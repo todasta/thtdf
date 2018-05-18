@@ -1,6 +1,6 @@
 /* GLOBAL */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   color: #222; }
 
@@ -27,7 +27,7 @@ h5 {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: 'Roboto Slab', serif; }
+  font-family: "Roboto Slab", sans-serif; }
 
 p {
   margin-top: 0;
@@ -80,28 +80,29 @@ a:hover {
 .header-branding {
   display: flex;
   padding: 1rem 0;
-  justify-content: space-around; }
-  .header-branding h1 {
-    color: white;
-    font-weight: normal;
-    margin-left: 1rem; }
+  justify-content: space-around;
+  align-items: center; }
 
-.header-branding img {
+.header-branding-text {
+  color: white;
+  font-weight: normal;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-family: "Roboto Slab", sans-serif;
+  color: #a7ce3b; }
+
+.header-branding-logo {
   height: 2rem; }
 
 .header-nav {
   display: flex;
-  padding-bottom: 0.5rem;
   justify-content: space-around; }
 
 .header-nav a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-size: 14px;
-  padding: 0 0.5rem;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-top: 8px; }
+  text-transform: uppercase; }
 
 .header-nav a.active,
 .header-nav a:hover {
@@ -114,7 +115,7 @@ a:hover {
     align-items: center; }
   .header-nav a {
     font-size: 1rem;
-    padding-left: 2rem; } }
+    padding-left: 3rem; } }
 
 /* HERO */
 .hero {

@@ -5,16 +5,20 @@ $light-green: hsl(76, 60%, 82%);
 $lighter-green: hsl(76, 60%, 93%);
 $dark-green: hsl(76, 60%, 30%);
 $black: #222;
+
 $font-size1: 1.5rem;
 $font-size2: 1.25rem;
 $font-size3: 1.0rem;
 $font-size4: 0.875rem;
 $font-size5: 0.75rem;
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-serif: 'Roboto Slab', sans-serif;
+
 $gutter: 1rem;
 /* GLOBAL */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family-sans-serif;
     line-height: 1.5;
     color: $black;
 }
@@ -47,7 +51,7 @@ h5 {
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-family: 'Roboto Slab', serif;
+    font-family: $font-family-serif;
 }
 
 p {
@@ -117,20 +121,24 @@ a:hover {
     display: flex;
     padding: 1rem 0;
     justify-content: space-around;
-    h1 {
-        color: white;
-        font-weight: normal;
-        margin-left: 1rem;
-    }
+    align-items: center;
 }
 
-.header-branding img {
+.header-branding-text {
+    color: white;
+    font-weight: normal;
+    margin-left: 1rem;
+    font-size: $font-size1;
+    font-family: $font-family-serif;
+    color: $green;
+}
+
+.header-branding-logo {
     height: 2rem;
 }
 
 .header-nav {
     display: flex;
-    padding-bottom: 0.5rem;
     justify-content: space-around;
 }
 
@@ -138,10 +146,7 @@ a:hover {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     font-size: 14px;
-    padding: 0 0.5rem;
     text-transform: uppercase;
-    display: inline-block;
-    margin-top: 8px;
 }
 
 .header-nav a.active,
@@ -157,7 +162,7 @@ a:hover {
     }
     .header-nav a {
         font-size: 1rem;
-        padding-left: 2rem;
+        padding-left: 3rem;
     }
     // .header-branding img {
     //     height: 3rem;
