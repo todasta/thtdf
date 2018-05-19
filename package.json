@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Experimental site for our local animal shelter",
   "main": "index.js",
-  "scripts": { "dev": "gulp" },
+  "scripts": {
+    "dev": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/todasta/thtdf.git"
@@ -18,5 +20,8 @@
     "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.0"
   }
 }
