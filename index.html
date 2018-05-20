@@ -6,10 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tierheim Troisdorf - Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">     
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
         crossorigin="anonymous"></script>
 </head>
@@ -18,19 +17,40 @@
 
     <!-- HEADER -->
 
-    <header class="header">
-        <div class="container header-container">
-            <div class="header-branding">
-                <img class="header-branding-logo" src="http://experimental.tierheim-troisdorf.de/vanilla/img/logo-top.png" alt="logo">
-                <span class="header-branding-text">Tierheim Troisdorf</span>
-            </div>
-            
-            <nav class="header-nav">
-                <a class="active" href="#">Home</a>
-                <a href="#">Tiere</a>
-                <a href="#">Spenden</a>
-                <a href="#">Helfen</a>
-                <a href="#">Infos</a>
+    <header class="bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Tierheim Troisdorf
+                    <img class="navbar-brand-logo d-none d-sm-inline" src="img/logo-top.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tiervermittlung</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Spenden</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Helfen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Über uns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Infos</a>
+                        </li>
+
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -39,108 +59,123 @@
 
     <section class="hero">
         <div class="container">
-            <img class="hero-image" src="http://experimental.tierheim-troisdorf.de/vanilla/img/logo.png" alt="Logo">
+            <img class="hero-image img-fluid" src="img/logo.png" alt="Logo">
         </div>
     </section>
 
     <!-- CARDS -->
 
-    <section class="cards">
-        <div class="container grid grid-123">
+    <main>
+        <div class="container">
+            <div class="row">
 
-            <div class="card col">
-                <img class="card-image" src="http://via.placeholder.com/600x400" alt="Spenden">
-                <h2 class="card-title">Große Futterspende der Weight Watchers</h2>
-                <div class="card-tags">
-                    <i class="fas fa-tag"></i>
-                    <a href="#">Spenden</a>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <a href="#">
+                            <img class="card-img-top" src="img/spendeweightwatchers-180331-019.800x500.jpg" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2 class="card-title h5">
+                                <a href="#">Große Futterspende der Weight Watchers</a>
+                            </h2>
+                            <p class="card-summary">280 kg Futter - dieses besondere Osterei spendeten Angela Bones und ihre Weight Watchers unseren
+                                Tieren.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-summary">
-                    280 kg Futter - dieses besondere Osterei spendeten Angela Bones und ihre Weight Watchers unseren Tieren.
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <a href="#">
+                            <img class="card-img-top" src="img/fruehlingsfest2016-160522-610.800x500.jpg" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2 class="card-title h5">
+                                <a href="#">Hunderallye auf dem Tag der offenen Tür mit tollen Preisen</a>
+                            </h2>
+                            <p class="card-summary">Bei unserem Tag der offenen Tür am 10.09.2017 können Sie mit Ihrem Hund auch an unserer beliebten
+                                Hunderallye teilnehmen.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <a href="#">
+                            <img class="card-img-top" src="img/weihnachtsbasar2017-171126-025.800x500.jpg" alt="">
+                        </a>
+                        <div class="card-body">
+                            <h2 class="card-title h5">
+                                <a href="#">Erfolgreicher Weihnachtsbasar 2017 im Tierheim Troisdorf</a>
+                            </h2>
+                            <p class="card-summary">Unser Weihnachtsbasar am Sonntag, den 26.11. war das letzte Fest in der Reihe der offiziellen
+                                Feiern im Tierheim Troisdorf in diesem Jahr.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="card col">
-                <img class="card-image" src="http://via.placeholder.com/600x400" alt="Spenden">
-                <h2 class="card-title">Hunderallye auf dem Tag der offenen Tür mit tollen Preisen</h2>
-                <div class="card-tags">
-                    <i class="fas fa-tag"></i>
-                    <a href="#">Tierheimfeste</a>
-                </div>
-                <div class="card-summary">
-                    Bei unserem Tag der offenen Tür am 10.09.2017 können Sie mit Ihrem Hund auch an unserer beliebten Hunderallye teilnehmen.
-                </div>
-            </div>
-
-            <div class="card col">
-                <img class="card-image" src="http://via.placeholder.com/600x400" alt="Spenden">
-                <h2 class="card-title">Erfolgreicher Weihnachtsbasar 2017 im Tierheim Troisdorf</h2>
-                <div class="card-tags">
-                    <i class="fas fa-tag"></i>
-                    <a href="#">Tierheimfeste</a>
-                </div>
-                <div class="card-summary">
-                    Unser Weihnachtsbasar am Sonntag, den 26.11. war das letzte Fest in der Reihe der offiziellen Feiern im Tierheim Troisdorf
-                    in diesem Jahr.
-                </div>
-            </div>
-
         </div>
-    </section>
+    </main>
 
     <footer class="footer">
-        <div class="container grid">
-            <div class="footer-info col">
-                <h2 class="footer-info-title">Kontakt</h2>
-                <p>
-                    <strong>Tierheim&nbsp;Troisdorf des Tierschutz&nbsp;RheinSieg&nbsp;e.V.</strong>
-                    <br> Siebengebirgsallee 105
-                    <br> 53840 Troisdorf
-                    <br>
-                    <br>
-                    <strong>Tel:</strong> 02241 127770-0 (Mo.-Fr. 9-12 Uhr)
-                    <br>
-                    <strong>Fax:</strong> 02241 127770-24
-                    <br>
-                    <br>
-                    <strong>Notfall:</strong> 0170 / 930 55 63 
-                    <br>(kein tierärztlicher Notdienst!)
-                </p>
-            </div>
-            <div class="footer-info col">
-                <h2 class="footer-info-title">Öffnungszeiten</h2>
-                <p>
-                    <strong>Zeiten für Besucher</strong>
-                    <br>Di., Fr., Sa., So. 14-17 Uhr
-                    <br> Mo., Mi., Do., feiertags geschlossen
-                    <br>
-                    <br>
-                    <strong>Zeiten für Hundeausf�hrer</strong>
-                    <br> Täglich 10-12 und 17-19:45 Uhr
-            </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="footer-info col-lg">
+                    <h2 class="footer-info-title">Kontakt</h2>
+                    <p>
+                        <strong>Tierheim&nbsp;Troisdorf des Tierschutz&nbsp;RheinSieg&nbsp;e.V.</strong>
+                        <br> Siebengebirgsallee 105
+                        <br> 53840 Troisdorf
+                        <br>
+                        <br>
+                        <strong>Tel:</strong> 02241 127770-0 (Mo.-Fr. 9-12 Uhr)
+                        <br>
+                        <strong>Fax:</strong> 02241 127770-24
+                        <br>
+                        <br>
+                        <strong>Notfall:</strong> 0170 / 930 55 63
+                        <br>(kein tierärztlicher Notdienst!)
+                    </p>
+                </div>
+                <div class="footer-info col-lg">
+                    <h2 class="footer-info-title">Öffnungszeiten</h2>
+                    <p>
+                        <strong>Zeiten für Besucher</strong>
+                        <br>Di., Fr., Sa., So. 14-17 Uhr
+                        <br> Mo., Mi., Do., feiertags geschlossen
+                        <br>
+                        <br>
+                        <strong>Zeiten für Hundeausf�hrer</strong>
+                        <br> Täglich 10-12 und 17-19:45 Uhr
+                </div>
 
-            <div class="footer-info col">
-                <h2 class="footer-info-title">Email</h2>
-                <p>
-                    <strong>Tierheimleitung</strong>
-                    <br> tierheimleitung@tierheim-troisdorf.de
-                    <br>
-                    <br>
-                    <strong>Tiervermittlung, vermisste Tiere</strong>
-                    <br> vermittlung@tierheim-troisdorf.de
-                    <br>
-                    <br>
+                <div class="footer-info col-lg">
+                    <h2 class="footer-info-title">Email</h2>
+                    <p>
+                        <strong>Tierheimleitung</strong>
+                        <br> tierheimleitung@tierheim-troisdorf.de
+                        <br>
+                        <br>
+                        <strong>Tiervermittlung, vermisste Tiere</strong>
+                        <br> vermittlung@tierheim-troisdorf.de
+                        <br>
+                        <br>
 
-                    <strong>Mitglieder, allg. Verwaltung</strong>
-                    <br> verwaltung@tierheim-troisdorf.de
-                    <br>
-                    <br>
-                    <strong>Vorstand des Tierschutzvereins</strong>
-                    <br> vorstand@tierheim-troisdorf.de
-                </p>
+                        <strong>Mitglieder, allg. Verwaltung</strong>
+                        <br> verwaltung@tierheim-troisdorf.de
+                        <br>
+                        <br>
+                        <strong>Vorstand des Tierschutzvereins</strong>
+                        <br> vorstand@tierheim-troisdorf.de
+                    </p>
+
+                </div>
             </div>
-            
-<!--
+            <!--
 
             <div class="footer-info col">
                 <h2 class="footer-info-title">Spendenkonto</h2>
@@ -181,5 +216,13 @@
         <div class="footer-copyright">&copy; Tierheim Troisdorf 2018</div>
     </footer>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 
 </body>

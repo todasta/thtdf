@@ -1,190 +1,25 @@
-$pink: hsl(330, 96%, 33%);
-$light-pink: hsl(330, 100%, 86%);
-$green: hsl(76, 60%, 52%);
-$light-green: hsl(76, 60%, 82%);
-$lighter-green: hsl(76, 60%, 93%);
-$dark-green: hsl(76, 60%, 30%);
-$black: #222;
+@import "custom-bootstrap";
 
-$font-size1: 1.5rem;
-$font-size2: 1.25rem;
-$font-size3: 1.0rem;
-$font-size4: 0.875rem;
-$font-size5: 0.75rem;
-$font-family-sans-serif: 'Roboto', sans-serif;
-$font-family-serif: 'Roboto Slab', sans-serif;
+// sm: Small devices (landscape phones, 576px and up)
+// md: Medium devices (tablets, 768px and up)
+// lg: Large devices (desktops, 992px and up)
+// xl: Extra large devices (large desktops, 1200px and up)
+// http://flexbox.malven.co/
+// https://hackerthemes.com/bootstrap-cheatsheet/
 
-$gutter: 1rem;
-/* GLOBAL */
-
-body {
-    font-family: $font-family-sans-serif;
-    line-height: 1.5;
-    color: $black;
-}
-
-h1 {
-    font-size: $font-size1;
-}
-
-h2 {
-    font-size: $font-size2;
-}
-
-h3 {
-    font-size: $font-size3;
-}
-
-h4 {
-    font-size: $font-size4;
-}
-
-h5 {
-    font-size: $font-size5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-family: $font-family-serif;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* GRID */
-
-.grid {
-    display: flex;
-    flex-direction: column;
-    @media (min-width: 900px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        >.col {
-            flex: 1;
-        }
-        &.grid-123>.col {
-            flex: 0 0 calc(50% - #{$gutter});
-        }
-    }
-    @media (min-width: 1200px) {
-        &.grid-123>.col {
-            flex: 0 0 calc(33.33% - #{$gutter});
-        }
-    }
-}
+/* VARIABLES */
 
 /* HEADER */
 
-.header {
-    background-color: $pink;
-    padding: 0.5rem 0;
-}
-
-.header-branding {
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
-    padding-bottom: 1rem;
-}
-
-.header-branding-text {
-    color: white;
-    font-weight: normal;
-    margin-left: 1rem;
-    font-size: $font-size4;
-    font-family: $font-family-serif;
-    color: $green;
-}
-
-.header-branding-logo {
+.navbar-brand-logo {
     height: 2rem;
-}
-
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-nav a {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-.header-nav a.active,
-.header-nav a:hover {
-    color: white;
-}
-
-@media (min-width: 600px) {
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header-nav a {
-        font-size: 1rem;
-        padding-left: 3rem;
-    }
-    .header-branding-logo {
-        height: 3rem;
-    }
-    .header-branding-text {
-        font-size: $font-size1;
-    }
-    .header-branding {
-        align-items: center;
-        padding-bottom: 1rem;
-    }
-        
-    // .header-branding img {
-    //     height: 3rem;
-    // }
+    margin-left: 0.5rem;
 }
 
 /* HERO */
 
 .hero {
-    background-color: $light-green;
+    background-color: lighten($secondary, 35%);
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -194,9 +29,9 @@ a:hover {
     max-height: 60vh;
 }
 
-@media (min-width: 600px) {
+@include media-breakpoint-up(sm) {
     .hero {
-        background-image: url(http://experimental.tierheim-troisdorf.de/vanilla/img/background.jpg);
+        background-image: url(../img/background.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -204,7 +39,7 @@ a:hover {
         text-align: right;
     }
     .hero-image {
-        max-height: 30vh;
+        max-height: 35vh;
         max-width: 40vw;
         margin-top: 1rem;
         padding: 1rem;
@@ -213,91 +48,10 @@ a:hover {
     }
 }
 
-/* CARDS */
-
-.card {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background: $lighter-green;
-    margin-bottom: 2rem;
-    border: 1px solid $dark-green;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, .15);
+body {
+    background-color: lighten($secondary, 42.5%);
 }
 
-.card-image {
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, .15);
-}
-
-.card-title {
-    color: $pink;
-}
-
-.card-tags {
-    color: $dark-green;
-}
-
-.card-tags a {
-    color: $dark-green;
-    font-weight: bold;
-    font-size: $font-size4;
-    text-transform: uppercase;
-}
-
-.card-tags {
-    margin-bottom: 1rem;
-}
-
-/* FOOTER */
-
-.footer {
-    background-color: $light-green;
-}
-
-.footer-info {
-    padding: 1rem;
-    text-align: center;
-}
-
-.footer-info p {
-    margin: 0;
-    font-size: $font-size4;
-}
-
-.footer-info-title {
-    border-bottom: 1px solid $pink;
-    color: $pink;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.footer-nav,
-.footer-social-nav {
-    display: flex;
-    background-color: $pink;
-    justify-content: center;
-}
-
-.footer-social-nav a {
-    color: white;
-    font-size: $font-size2;
-    display: inline-block;
-    padding: 1rem 1rem 0;
-}
-
-.footer-nav a {
-    font-size: $font-size5;
-    color: rgba(255, 255, 255, 0.7);
-    display: inline-block;
-    padding: 1rem 0.5rem 0;
-    text-transform: uppercase;
-}
-
-.footer-copyright {
-    color: rgba(255, 255, 255, 0.4);
-    text-align: center;
-    padding: 1.5rem 0 0.5rem;
-    font-size: $font-size5;
-    background-color: $pink;
+footer {
+    background-color: lighten($secondary, 20%);
 }
