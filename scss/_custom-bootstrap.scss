@@ -10,13 +10,11 @@ $enable-shadows:            true;
 $primary:       hsl(330, 96%, 33%);
 $secondary:     hsl(76, 60%, 52%);
 
-$secondary-light: lighten($secondary, 15%);
-$secondary-lighter: lighten($secondary, 40%);
-$secondary-dark: darken($secondary, 20%);
-
 //$card-bg: $secondary-lighter;
-$card-border-color: $secondary-dark;
-//$card-border-width: 3px;
+//$card-border-color: $secondary-dark;
+$card-border-width: 1px;
+
+$font-family-sans-serif: Roboto, sans-serif;
 
 
  @import "../node_modules/bootstrap/scss/functions";

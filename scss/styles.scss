@@ -9,6 +9,16 @@
 
 /* VARIABLES */
 
+$font-family-serif: "Roboto Slab", serif;
+
+$secondary-dark: darken($secondary, 20%);
+
+/* GLOBAL */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $font-family-serif;
+}
+
 /* HEADER */
 
 .navbar-brand-logo {
@@ -22,6 +32,7 @@
     background-color: lighten($secondary, 35%);
     text-align: center;
     margin-bottom: 2rem;
+    border-bottom: 0.25rem solid $secondary-dark;
 }
 
 .hero-image {
@@ -37,6 +48,7 @@
         background-repeat: no-repeat;
         height: 45vh;
         text-align: right;
+        //border-bottom: none;
     }
     .hero-image {
         max-height: 35vh;
@@ -52,6 +64,7 @@ body {
     background-color: lighten($secondary, 42.5%);
 }
 
-footer {
-    background-color: lighten($secondary, 20%);
+.footer-infos {
+    background-color: lighten($secondary, 25%);
+    border-top: 0.25rem solid $secondary-dark;
 }
