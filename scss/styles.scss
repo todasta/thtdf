@@ -13,6 +13,8 @@ $font-family-serif: "Roboto Slab", serif;
 
 $secondary-dark: darken($secondary, 20%);
 
+$white-muted: rgba($white, 0.7);
+
 /* GLOBAL */
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -68,3 +70,35 @@ body {
     background-color: lighten($secondary, 25%);
     border-top: 0.25rem solid $secondary-dark;
 }
+
+.social-links {
+    list-style: none;
+    li {
+        display: inline-block;
+        margin-left: 1.5em;
+    }
+    a {
+        color: $white-muted;
+        font-size: 1.25em;
+    }
+    a:hover {
+        color: $white;
+    }
+}
+
+.secondary-nav {
+    list-style: none;
+    margin-left: auto;
+    li {
+        display: inline-block;
+        margin-left: 1.5em;
+    }
+    a {
+        color: $white-muted;
+        font-size: 0.8em;
+    }
+    a:hover {
+        color: $white;
+    }
+}
+
